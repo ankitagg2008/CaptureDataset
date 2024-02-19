@@ -1,0 +1,12 @@
+import cv2
+import os
+import streamlit as st
+
+def record_dataset(banner_id, name):
+    # Your record_dataset function
+
+def main():
+    # Your main function
+
+if __name__ == "__main__":
+    main()

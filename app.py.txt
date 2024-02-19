@@ -1,0 +1,17 @@
+from flask import Flask, render_template
+from subprocess import Popen
+
+app = Flask(__name__)
+
+@app.route('')
+def index()
+    return render_template('index.html')
+
+@app.route('record_dataset')
+def record_dataset()
+    # Run the Streamlit app as a subprocess
+    Popen(['streamlit', 'run', 'streamlit_app.py'])
+    return 'Recording dataset...'
+
+if __name__ == '__main__'
+    app.run(debug=True)
